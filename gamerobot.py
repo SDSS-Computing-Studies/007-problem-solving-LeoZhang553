@@ -3,14 +3,23 @@ import time as t
 
 p.mouseInfo()
 
-# this is not the actual work
-
 # game: https://www.crazygames.com/game/poop-clicker-2
-# Location:1423,396  pixel:186,151,101
+
+# this is the work for submission
+hand = p.locateCenterOnScreen('butHand.png')
+baby = p.locateCenterOnScreen('butBaby.png')
+toilet = p.locateCenterOnScreen('butToilet.png')
+cow = p.locateCenterOnScreen('butCow.png')
+farm = p.locateCenterOnScreen('butFarm.png')
+factory = p.locateCenterOnScreen('butFactory.png')
+city = p.locateCenterOnScreen('butCity.png')
+earth = p.locateCenterOnScreen('butEarth.png')
+poop = p.locateCenterOnScreen('butPoop.png')
+tools = p.locateCenterOnScreen('butTools.png')
+
 while True:
-    if p.pixel(1423,396) == (186,151,101):
-        p.moveTo(1421,410 )
-        p.click()  
+    if p.pixel(poop) == (186,151,101):
+        p.click(poop)  
 
         if p.pixel(1637,546) == ( 140,314,57 ):
             p.moveTo()
@@ -55,7 +64,3 @@ while True:
         
     else:
         break
-
-
-
-
