@@ -13,7 +13,6 @@ while True:
         p.click()  
 
         if p.pixel(1637,546) == ( 140,314,57 ):
-            p.moveTo()
             p.moveTo(1637,546)
             p.click()
             t.sleep(0.3)
